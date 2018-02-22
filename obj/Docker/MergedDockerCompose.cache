@@ -1,0 +1,11 @@
+services:
+  bracoo:
+    build:
+      context: C:\Users\hinom\source\repos\bracoo
+      dockerfile: bracoo/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: bracoo
+    ports:
+    - 80/tcp
+version: '3.0'
